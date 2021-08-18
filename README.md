@@ -9,4 +9,6 @@ The sequences are transcribed in a variation of [Jianpu notation](http://debussy
 ### Referenced Videos
 
 * BigDrum Channel's [『獅鼓教學』EP1臺灣最常見的獅鼓有哪些呢？](https://youtu.be/_Itmg-bx2vI)
+* 羅國誠's [醒獅鼓1](https://youtu.be/2HsofikMtf4)
+* 羅國誠's [醒獅鼓3](https://youtu.be/LrHr2h4OoJk)
 * ... and more
