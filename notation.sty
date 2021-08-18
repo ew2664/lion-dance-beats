@@ -1,0 +1,49 @@
+\ProvidesPackage{notation}
+\usepackage[geometry]{ifsym}
+
+% BEAT NOTATION
+\def\db{\Cross} % main drum beat
+\def\cb{\TriangleUp} % single click beat
+\def\tb{\TriangleDown} % double click beat
+\def\mb{\Square} % muted drum beat
+\def\rb{\Circle} % rest
+
+% RHYTHMIC NOTATION
+\newcommand{\ul}[1]{\smash{\underline{#1}}}
+\newcommand{\uul}[1]{\smash{\underline{\underline{#1}}}}
+
+% BEAT PATTERNS
+\def\D{\db\space}
+\def\C{\cb\space}
+\def\T{\tb\space}
+\def\M{\mb\space}
+\def\R{\rb\space}
+\def\DD{\ul{\db\db}\space}
+\def\DC{\ul{\db\cb}\space}
+\def\CD{\ul{\cb\db}\space}
+\def\CC{\ul{\cb\cb}\space}
+\def\TD{\ul{\tb\db}\space}
+\def\RD{\ul{\rb\db}\space}
+\def\Ddd{\ul{\db}\uul{\db\db}\space}
+\def\Dcc{\ul{\db}\uul{\cb\cb}\space}
+\def\Drc{\ul{\db}\uul{\rb\cb}\space}
+\def\Ccc{\ul{\cb}\uul{\cb\cb}\space}
+\def\Cdd{\ul{\cb}\uul{\db\db}\space}
+\def\Trc{\ul{\tb}\uul{\rb\cb}\space}
+\def\Mrc{\ul{\mb}\uul{\rb\cb}\space}
+\def\dddd{\uul{\db\db}\uul{\db\db}\space}
+
+% CONTROL NOTATION
+\def\msr{\space\rule[-1.5ex]{0.7pt}{5ex}\space\space}
+\def\secmsr{\space\rule[-1.5ex]{0.7pt}{5ex}\,\rule[-1.5ex]{0.7pt}{5ex}}
+\def\endmsr{\space\rule[-1.5ex]{0.7pt}{5ex}\,\rule[-1.5ex]{2pt}{5ex}}
+\def\lrep{\space\rule[-1.5ex]{1.2pt}{5ex}\,\rule[-1.5ex]{0.7pt}{5ex}\,\raisebox{0.7ex}{\textbf{:}}\space}
+\def\rrep{\raisebox{0.7ex}{\textbf{:}}\,\rule[-1.5ex]{0.7pt}{5ex}\,\rule[-1.5ex]{1.2pt}{5ex}\space\space}
+\def\lrrep{\raisebox{0.7ex}{\textbf{:}}\,\rule[-1.5ex]{1.2pt}{5ex}\,\rule[-1.5ex]{1.2pt}{5ex}\,\raisebox{0.7ex}{\textbf{:}}\space}
+\def\ltrep{\space\rule[-1.5ex]{1.2pt}{5ex}\,\rule[-1.5ex]{0.7pt}{5ex}\,\raisebox{0.1ex}{\textbf{\vdots}}\space}
+\def\rtrep{\raisebox{0.1ex}{\textbf{\vdots}}\,\rule[-1.5ex]{0.7pt}{5ex}\,\rule[-1.5ex]{1.2pt}{5ex}\space\space}
+\def\lrtrep{\raisebox{0.7ex}{\textbf{:}}\,\rule[-1.5ex]{1.2pt}{5ex}\,\rule[-1.5ex]{1.2pt}{5ex}\,\raisebox{0.1ex}{\textbf{\vdots}}\space}
+\def\ltrrep{\raisebox{0.1ex}{\textbf{\vdots}}\,\rule[-1.5ex]{1.2pt}{5ex}\,\rule[-1.5ex]{1.2pt}{5ex}\,\raisebox{0.7ex}{\textbf{:}}\space}
+\def\ltrtrep{\raisebox{0.1ex}{\textbf{\vdots}}\,\rule[-1.5ex]{1.2pt}{5ex}\,\rule[-1.5ex]{1.2pt}{5ex}\,\raisebox{0.1ex}{\textbf{\vdots}}\space}
+
+
